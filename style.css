@@ -1,0 +1,9 @@
+:root {
+    --umbreon-bgc: #697585;
+    --umbreon-text: #3F4650;
+}
+
+body {
+    background-color: var(--umbreon-bgc);
+    color: var(--umbreon-text);
+}
