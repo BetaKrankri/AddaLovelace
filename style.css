@@ -1,19 +1,31 @@
 :root {
-    --umbreon-bgc: #697585;
-    --umbreon-text: #3F4650;
+    --darkmodebg: rgb(12, 24, 42);
+    --darkmodetext: #697585;
+    --darkmodeemph: #3f4650;
+
+    --lightmodetext: var(--darkmodebg);
+    --lightmodebg: var(--darkmodetext);
+    
+
+    --emph: var(--darkmodeemph);
+    --bgc: var(--darkmodebg);
+    --text: var(--darkmodetext);
+
+
 }
 
 body {
-    background-color: var(--umbreon-bgc);
-    color: var(--umbreon-text);
+    background-color: var(--bgc);
+    color: var(--text);
     font-family: 'Courier New', Courier, monospace;
 }
 
 nav {
-    background-color: var(--umbreon-bgc);
+    background-color: var(--bgc);
     width: 100%;
     position: fixed;
     z-index: 10;
+    box-shadow: 0 0px 5px var(--emph);
 }
 
 nav>h1 {
@@ -34,33 +46,90 @@ nav li {
 a {
     text-decoration: none;
     font-weight: bold;
-    color: var(--umbreon-text);
+    color: var(--text);
 }
 
 a:hover {
-    text-decoration: underline var(--umbreon-text) 2px;
+    text-decoration: underline var(--text) 2px;
 }
 
 /* Main content */
 main {
     width: 95%;
+    max-width: 1000px;
     margin: auto;
     position: relative;
     top: 7.5rem;
     overflow: hidden;
 }
 
-section#about {}
+h2 {
+    color: var(--text);
+    text-align: center;
+    font-weight: bold;
+}
+
+section p {
+    text-align: justify;
+    font-weight: bold;
+    
+}
+
+#about {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #prof-pic {
     width: 100%;
+    max-width: 300px;
     border-radius: 2rem;
 }
 
-#about>h2 {
+div.project {
+    width: 95%;
+    max-width: 400px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project img {
+    width: 80%;
+}
+
+#skills>div {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.material-icons {
+    color: var(--emph);
+}
+
+.material-icons:hover {
+    transition: .5s;
+    color: var(--darkmodetext);
+    
+}
+
+#contact {
+    width: 85%;
+    margin: auto;
+    
+    display: flex;
+    flex-direction: column;
+}
+#contact p {
     text-align: center;
 }
 
-#about>p {
-    text-align: justify;
-}
