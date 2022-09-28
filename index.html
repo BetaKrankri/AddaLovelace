@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="main.js" defer></script>
     <title>My Portfolio</title>
 </head>
 
@@ -14,26 +16,83 @@
     <nav>
         <h1>Ada Lovelace</h1>
         <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <main>
         <section id="about">
             <img id="prof-pic" src="./resources/img/ada-lovelace-20825279-1-402.jpg" alt="Ada Lovelace picture"></div>
-            <h2>About Me</h2>
+            <h2>#About Me</h2>
             <p>Hi! I'm Ada, Countess of Lovelace and I am an English mathematician and writer, chiefly known for my work
                 on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine.</p>
             <p>I am one of the first to recognize that machines have applications beyond pure calculation, and to have
                 published the first algorithm intended to be carried out by such a machine.</p>
             <p>In my free time I like to read about scientific developments, mathematics, and computational
                 mathematics. I also like to take my chances of winning big.</p>
-            <p>Fun fact! I've been programing for 6,526,035,125 seconds!</p>
+            <p>Fun fact! I've been programing for <i id="timer">6,526,035,125</i> seconds!</p>
         </section>
+
+        <section id="projects">
+            <h2>#Projects</h2>
+            <h3>-> The first computer program</h3>
+            <div class="project first">
+                <img src="./resources/img/Diagram_for_the_computation_of_Bernoulli_numbers.jpg"
+                    alt="Diagram for the computation of Bernoulli numbers">
+                <p>The world's first computer program for computing Bernoulli numbers.</p>
+            </div>
+            <h3>-> The Analytical Engine</h3>
+            <div class="project second">
+                <img src="./resources/img/analyticalmachine_babbage_london.webp"
+                    alt="Analytical MAchine Babbage, London">
+                <p>I helped Charles Babbage on topics ranging from math to computation that helped the development of
+                    the Analytical Engine.</p>
+            </div>
+            <h3>-> The Ada programming language</h3>
+            <div class="project third">
+                <img src="./resources/img/220px-Ada_Mascot_with_slogan.svg.png" alt="Ada MAscot with slogan">
+                <p>My work inspired the United States Department of Defense to name their new programming language after
+                    me.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>#Skills</h2>
+            <div>
+                <span class="material-icons">html</span>
+                <span class="material-icons">php</span>
+                <span class="material-icons">css</span>
+                <span class="material-icons">javascript</span>
+                <span class="material-icons">terminal</span>
+                <span class="material-icons">smart_toy</span>
+                <span class="material-icons">games</span>
+                <span class="material-icons">sports_esports</span>
+                <span class="material-icons">pest_control_rodent</span>
+
+                <span class="material-icons">visibility</span>
+                <span class="material-icons">help</span>
+                <span class="material-icons">account_balance</span>
+                <span class="material-icons">pets</span>
+                <span class="material-icons">devices_other</span>
+                <span class="material-icons">view_in_ar</span>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>#Contact</h2>
+            <p>Have an interesting project! I would love to hear about it! <br><br>
+                <span class="material-icons">24mp</span>
+                <span class="material-icons">hub</span>
+                <span class="material-icons">forum</span>
+            </p>
+        </section>
+        <h6 id="foot">Made with <span class="material-icons">favorite</span> from my room :)</h6>
+
     </main>
+
 </body>
 
 </html>
