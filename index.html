@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script type="text/javascript" src="main.js" defer></script>
     <title>My Portfolio</title>
 </head>
 
@@ -22,6 +21,11 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
+    <div id="color-mode">
+        <span id="dark-mode" class="material-icons">dark_mode</span>
+        <span id="light-mode" class="material-icons" style="display:none">light_mode</span>
+    </div>
 
     <main>
         <section id="about">
@@ -38,21 +42,24 @@
 
         <section id="projects">
             <h2>#Projects</h2>
-            <h3>-> The first computer program</h3>
+            <!-- Primer proyecto -->
             <div class="project first">
+                <h3 class="first">-> The first computer program</h3>
                 <img src="./resources/img/Diagram_for_the_computation_of_Bernoulli_numbers.jpg"
                     alt="Diagram for the computation of Bernoulli numbers">
                 <p>The world's first computer program for computing Bernoulli numbers.</p>
             </div>
-            <h3>-> The Analytical Engine</h3>
+            <!-- Segundo proyecto -->
             <div class="project second">
+                <h3 class="second">-> The Analytical Engine</h3>
                 <img src="./resources/img/analyticalmachine_babbage_london.webp"
-                    alt="Analytical MAchine Babbage, London">
+                    alt="Analytical Machine Babbage, London">
                 <p>I helped Charles Babbage on topics ranging from math to computation that helped the development of
                     the Analytical Engine.</p>
             </div>
-            <h3>-> The Ada programming language</h3>
+            <!-- Tercer proyecto -->
             <div class="project third">
+                <h3 class="third">-> The Ada programming language</h3>
                 <img src="./resources/img/220px-Ada_Mascot_with_slogan.svg.png" alt="Ada MAscot with slogan">
                 <p>My work inspired the United States Department of Defense to name their new programming language after
                     me.</p>
@@ -71,7 +78,6 @@
                 <span class="material-icons">games</span>
                 <span class="material-icons">sports_esports</span>
                 <span class="material-icons">pest_control_rodent</span>
-
                 <span class="material-icons">visibility</span>
                 <span class="material-icons">help</span>
                 <span class="material-icons">account_balance</span>
@@ -89,10 +95,11 @@
                 <span class="material-icons">forum</span>
             </p>
         </section>
-        <h6 id="foot">Made with <span class="material-icons">favorite</span> from my room :)</h6>
 
+        <h6 id="foot">Made with <span class="material-icons">favorite</span> from my room :)</h6>
     </main>
 
+    <script src="./main.js"></script>
 </body>
 
 </html>

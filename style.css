@@ -1,18 +1,13 @@
 :root {
-    --darkmodebg: rgb(12, 24, 42);
-    --darkmodetext: #697585;
-    --darkmodeemph: #3f4650;
+    --color1: #F8F3F2;
+    --color2: #13293D;
+    --color3: #63B4D1;
 
-    --lightmodetext: var(--darkmodebg);
-    --lightmodebg: var(--darkmodetext);
-    
+    --bgc: var(--color1);
+    --text: var(--color2);
+    --emph: var(--color3);
 
-    --emph: var(--darkmodeemph);
-    --bgc: var(--darkmodebg);
-    --text: var(--darkmodetext);
-
-
-}
+ }
 
 body {
     background-color: var(--bgc);
@@ -24,7 +19,7 @@ nav {
     background-color: var(--bgc);
     width: 100%;
     position: fixed;
-    z-index: 10;
+    z-index: 2;
     box-shadow: 0 0px 5px var(--emph);
 }
 
@@ -105,7 +100,6 @@ div.project {
     width: 60%;
     margin: auto;
     margin-bottom: 1rem;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -116,11 +110,11 @@ div.project {
     color: var(--emph);
 }
 
-.material-icons:hover {
+/* .material-icons:hover {
     transition: .5s;
     color: var(--darkmodetext);
     
-}
+} */
 
 #contact {
     width: 85%;
@@ -139,5 +133,23 @@ div.project {
 #foot>.material-icons {
     font-size: 11px;
     color:red;
+}
+
+/* Color mode button feature */
+#color-mode {
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+    background-color: var(--color2);
+    z-index: 4;
+
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--emph);
 }
 
