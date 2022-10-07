@@ -9,6 +9,8 @@
 
  }
 
+
+
 body {
     background-color: var(--bgc);
     color: var(--text);
@@ -149,7 +151,5 @@ div.project {
     display: flex;
     justify-content: center;
     align-items: center;
-
     border: 1px solid var(--emph);
 }
-
